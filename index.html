@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-COMPATIBLE" content="IE-edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Personal Portfolio Website</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <script src="https://kit.fontawesome.com/3cd280440b.js" crossorigin="anonymous"></script> 
+    </head>
+    <body>
+    <header class="header">
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <a href="#" class="logo" >Portfolio</a>
+         
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#myskills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Hello!</h3>
+            <h1>I'm Srijita</h1>
+            <h2>a Web Developer & Tech Enthusiast</h2>
+            <p>
+            Welcome to my portfolio! <br>
+            I'm passionate about building visually appealing and fully functional web applications. <br>
+            I love exploring modern web technologies and creating innovative digital solutions. <br>
+            With a strong foundation in front-end and full-stack development, I aim to design <br>
+            user-friendly and high-performance websites that make an impact.
+           </p>
+
+            <div class="home-sec">
+            <a href="https://github.com/Srijita-TechSeeker" target="_blank"><i class="bi bi-github"></i></a>
+            <a href="https://www.instagram.com/ksreejita2/?next=%2F" target="_blank"><i class="bi bi-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/srijita-kundu-39972028a/" target="_blank"><i class="bi bi-linkedin"></i></a>
+            <a href="mailto:srijitakundu66@gmail.com" target="_blank"><i class="bi bi-envelope"></i></a>
+            </div>
+
+            <div class="btns">
+                <button class="hire_me" id="hire-me-btn">Hire me</button>
+                <button class="resume" id="download-cv-button">Download Resume</button>
+                
+            </div>
+            <div class="image">
+                <img src="Resume1.jpg" alt="profile">
+            </div>
+           
+        </div>
+    </section>
+
+
+
+    <section class="about" id="about">
+        <div class="about-content">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="Resume1.jpg" alt="profile">
+                </div>
+                <div class="about-col-2">
+                    <h2>About me</h2>
+                    <p>I'm a passionate and motivated Computer Science and Engineering student with a strong foundation in software development, data structures, and databases. 
+                    I specialize in front-end and full-stack web development using modern technologies such as HTML, CSS, JavaScript, React.js, Node.js, and MongoDB. 
+                    I enjoy turning ideas into creative, user-friendly, and high-performance web applications that deliver impactful user experiences. 
+                    My goal is to continue learning and innovating to build scalable digital solutions that make a difference.</p>
+                     <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links"onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Full Stack Development</span><br>Building complete web applications using MERN Stack </li>
+                            <li><span>Front-end Web Development</span><br>Designing user interfaces</li>
+                            <li><span>Machine Learning</span><br>Building ML models and applications </li>
+                        </ul>
+
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>B.Tech in Computer Science and Engineering</span><br>University of Engineering & Management, Kolkata(2022-2026) | CGPA: 8.55</li>
+                            <li><span>Higher Secondary (Science)</span><br>Taki House Govt. Sponsored Girls' School (2020-2022) | Percentage: 80.8%</li>
+                            <li><span>Secondary</span><br>Ramakrishna Sarada Mission Sister Nivedita Girls' School (2010-2020) | Percentage: 88.57%</li>
+                        </ul>
+                        <ul>
+                            <li><span>Certifiactions:</span><br></li>
+                            <li><span>DBMS</span> - Database  Structures and Management with MySQL (Coursera)
+                            <a href="https://drive.google.com/file/d/1vKsKg-1PdtR2sFmzhikiheWr_xM7uE2G/view?usp=sharing" target="_blank">[View Certificate]</a>
+                            </li>
+                            <li>
+                            <span>AI Foundations</span> - Machine learning (LinkedIn Learning)
+                            <a href="https://drive.google.com/file/d/1PbIocDmsi2l7TYny_qPSva_Z1a8NlNti/view?usp=drive_link" target="_blank">[View Certificate]</a>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <section class="services" id="services">
+  <div class="services-content">
+    <h2>My Services</h2>
+    <div class="services-list">
+
+      <!-- Full Stack Web Development (LMS Project) -->
+      <div>
+        <i class="fa-solid fa-code"></i>
+        <h1>Full Stack Web Development</h1>
+        <p>
+          I develop responsive and dynamic web applications using the MERN stack (MongoDB, Express.js, React.js, Node.js).
+          My focus is on building scalable, efficient, and user-friendly web solutions.
+        </p>
+        <a href="#" onclick="showInfo('lms')">Learn more</a>
+      </div>
+
+      <!-- Front-End Design -->
+      <div>
+        <i class="fa-brands fa-html5"></i>
+        <h1>Front-End Design</h1>
+        <p>
+          I design modern, responsive, and visually appealing interfaces using HTML, CSS, and JavaScript.
+          My goal is to ensure smooth navigation and an engaging user experience on every device.
+        </p>
+        <a href="index.html" target="_blank">Learn more</a>
+      </div>
+
+      <!-- Machine Learning Applications -->
+      <div>
+        <i class="fa-solid fa-robot"></i>
+        <h1>Machine Learning Applications</h1>
+        <p>
+          I build intelligent, data-driven applications using Python and Scikit-learn to solve real-world problems such as recommendations and predictions.
+        </p>
+        <a href="#" onclick="showInfo('ml')">Learn more</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Hidden Pop-up Info -->
+<div id="infoBox" class="info-popup" style="display:none;">
+  <div class="info-content">
+    <span class="close-btn" onclick="closeInfo()">&times;</span>
+    <div id="infoText"></div>
+  </div>
+</div>
+
+<!-- Script for Pop-up Functionality -->
+<script>
+  function showInfo(type) {
+    const infoBox = document.getElementById("infoBox");
+    const infoText = document.getElementById("infoText");
+    let content = "";
+
+    if (type === "lms") {
+      content = `
+        <h2>Library Management System (MERN Stack)</h2>
+        <p>
+          I developed a full-stack web application using the MERN stack — 
+          <b>Frontend:</b> React.js | <b>Backend:</b> Node.js & Express.js | <b>Database:</b> MongoDB.
+        </p>
+        <p>🌐 Deployed App: 
+          <a href="https://flourishing-nasturtium-a80902.netlify.app/" target="_blank">Click here to view</a>
+        </p>
+      `;
+    }
+
+    if (type === "ml") {
+      content = `
+        <h2>Machine Learning Projects</h2>
+        <ul>
+          <li>🎬 <b>Movie Recommendation System:</b> 
+            <a href="https://movie-recommendation-system-qcpntp76dddbex7qok76md.streamlit.app/" target="_blank">
+            View Project</a>
+          </li>
+          <li>🎓 <b>Student Performance Prediction:</b> Predicts whether a student will pass or fail based on study hours, attendance, assignments, and motivation.
+            <br>🌐 <a href="https://student-performance-prediction-fvpm.onrender.com" target="_blank">
+            Open App</a>
+          </li>
+          <li>💼 <b>Employee Salary Prediction:</b> 
+            <a href="https://employeesalaryprediction-tgpwiotythmv3dylucj3ex.streamlit.app/" target="_blank">
+            View Project</a>
+          </li>
+        </ul>
+      `;
+    }
+
+    infoText.innerHTML = content;
+    infoBox.style.display = "flex";
+  }
+
+  function closeInfo() {
+    document.getElementById("infoBox").style.display = "none";
+  }
+</script>
+
+<!-- Optional: Basic Popup Styles (inline to avoid CSS file changes) -->
+<style>
+  .info-popup {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(252, 229, 229, 0.8);
+    display: flex; justify-content: center; align-items: center;
+    z-index: 9999;
+  }
+  .info-content {
+    background: #e0a9a9;
+    color: #000;
+    padding: 25px;
+    border-radius: 12px;
+    width: 80%;
+    max-width: 600px;
+    text-align: left;
+    position: relative;
+  }
+  .info-content h2 { color: #111; margin-bottom: 10px; }
+  .info-content a { color: #007BFF; text-decoration: none; }
+  .close-btn {
+    position: absolute;
+    top: 8px; right: 15px;
+    font-size: 28px; cursor: pointer; color: #444;
+  }
+</style>
+
+
+
+
+
+  <section class="skills" id="myskills">
+  <div class="skills-content1">
+    <h2>Skills</h2>
+    <div class="skills-row">
+
+      <!-- Coding Skills -->
+      <div class="skills-column">
+        <h3 class="title">Coding Skills</h3>
+
+        <div class="skills-box">
+          <div class="skills-content">
+
+            <div class="progress">
+              <h3>HTML <span>90%</span></h3>
+              <div class="bar"><span></span></div>
+            </div>
+
+            <div class="progress">
+              <h3>CSS <span>85%</span></h3>
+              <div class="bar"><span></span></div>
+            </div>
+
+            <div class="progress">
+              <h3>JavaScript <span>80%</span></h3>
+              <div class="bar"><span></span></div>
+            </div>
+
+            
+            <div class="progress">
+              <h3>Java <span>70%</span></h3>
+              <div class="bar"><span></span></div>
+            </div>
+
+            <div class="progress">
+              <h3>C Programming <span>65%</span></h3>
+              <div class="bar"><span></span></div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Professional Skills -->
+      <div class="skills-column">
+        <h3 class="title">Professional Skills</h3>
+
+        <div class="skills-box">
+          <div class="skills-content">
+
+            <div class="progress">
+              <h3>Full Stack Development <span>85%</span></h3>
+              <div class="bar"><span></span></div>
+            </div>
+
+            <div class="progress">
+              <h3>Front-End Design <span>80%</span></h3>
+              <div class="bar"><span></span></div>
+            </div>
+
+            <div class="progress">
+              <h3>Database Management (MySQL & MongoDB) <span>75%</span></h3>
+              <div class="bar"><span></span></div>
+            </div>
+
+            <div class="progress">
+              <h3>Machine Learning <span>70%</span></h3>
+              <div class="bar"><span></span></div>
+            </div>
+
+            <div class="progress">
+              <h3>Data Structures & Algorithms <span>65%</span></h3>
+              <div class="bar"><span></span></div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="projects" id="projects">
+  <div class="projects-content">
+    <h2>My Projects</h2>
+    <div class="work-list">
+
+      <div class="work">
+        <img src="lms.jpg" alt="Library Management System">
+        <div class="layer">
+          <h3>Library Management System</h3>
+          <p>Developed a full-stack web application using React.js, Node.js, Express.js, and MongoDB. Implemented CRUD operations, authentication, and deployment on Netlify and Render.</p>
+          <a href="https://flourishing-nasturtium-a80902.netlify.app/" target="_blank"><i class="fa fa-external-link" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div class="work">
+        <img src="movie.jpg" alt="Movie Recommendation System">
+        <div class="layer">
+          <h3>Movie Recommendation System</h3>
+          <p>Created a movie recommendation web app using Python, Streamlit, Pandas, and Scikit-learn. Suggests movies based on user preferences and deployed via Streamlit Cloud.</p>
+          <a href="https://movie-recommendation-system-qcpntp76dddbex7qok76md.streamlit.app/" target="_blank"><i class="fa fa-external-link" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div class="work">
+        <img src="quiz.jpg" alt="Online Quiz Application">
+        <div class="layer">
+          <h3>Online Quiz Application (Java)</h3>
+          <p>Built a Java desktop-based quiz system using Swing and AWT. Features login, rules, quiz logic, scoring, and user interaction modules.</p>
+          <a href="https://github.com/Srijita-TechSeeker/CODSOFT-JAVA-DEVELOPMENT/tree/main/OnlineQuiz" target="_blank"><i class="fa fa-external-link" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+            <section class="contact" id="contact">
+  <div class="contact-content">
+    <div class="row">
+
+      <!-- Left Column: Info + Socials -->
+      <div class="contact-left">
+        <h1 class="sub-title">Contact Me</h1>
+        <p><i class="fa fa-paper-plane" aria-hidden="true"></i> 
+          <a href="mailto:srijitakundu66@gmail.com">srijitakundu66@gmail.com</a>
+        </p>
+        <p><i class="fa fa-phone-square" aria-hidden="true"></i> +91 7439260701</p>
+
+        <div class="social-icons">
+          <a href="https://github.com/Srijita-TechSeeker" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+          <a href="https://www.linkedin.com/in/srijita-kundu-39972028a/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+          <a href="https://www.instagram.com/ksreejita2/?next=%2F" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+          <a href="mailto:srijitakundu66@gmail.com" target="_blank"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+        </div>
+
+        <a href="Srijita_Kundu_ATS_Resume.pdf" download class="btn btn2">Download Resume</a>
+      </div>
+
+      <!-- Right Column: Contact Form -->
+      <div class="contact-right">
+        <form action="https://formspree.io/f/mnngggqa" method="POST">
+          <input type="text" name="Name" placeholder="Enter Your Name" required>
+          <input type="email" name="Email" placeholder="Enter Your Email" required>
+          <textarea name="Message" rows="6" placeholder="Type Your Message"></textarea>
+          <button type="submit" class="btn btn3">Submit</button>
+        </form>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="copyright">
+    <p>&copy; 2025 by <span>Srijita Kundu</span> | All rights reserved.</p>
+  </div>
+</section>
+
+    
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+    
+</script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    const check = document.getElementById('check');
+    const navbar = document.querySelector('.navbar');
+    const navbarLinks = document.querySelectorAll('.navbar a');
+
+    check.addEventListener('click', function() {
+        if (check.checked) {
+            navbar.classList.add('show');
+        } else {
+            navbar.classList.remove('show');
+        }
+    });
+
+    navbarLinks.forEach(link => {
+        link.addEventListener('click', function() {
+            navbar.classList.remove('show');
+            check.checked = false; // Uncheck the checkbox to close the menu
+        });
+    });
+});
+</script>
+
+
+
+<script>
+  // When Hire Me button is clicked, open Gmail compose
+  document.getElementById("hire-me-btn").addEventListener("click", function() {
+    const subject = "Hiring Inquiry — from Portfolio";
+    const body = "Hi Srijita,%0D%0A%0D%0AI came across your portfolio and would like to discuss a potential opportunity.%0D%0A%0D%0ARegards,%0D%0A";
+    const mailtoLink = `mailto:srijitakundu66@gmail.com?subject=${subject}&body=${body}`;
+    window.location.href = mailtoLink;
+  });
+</script>
+
+
+
+
+<script>
+    // JavaScript to handle the download button click
+    document.getElementById('download-cv-button').addEventListener('click', function() {
+        // Create a link element
+        const link = document.createElement('a');
+        // Set the href attribute to the path of the PDF file
+        link.href = 'resume.docx';
+        // Set the download attribute to suggest a default file name
+        link.download = 'resume.docx';
+        // Append the link to the body
+        document.body.appendChild(link);
+        // Programmatically click the link to trigger the download
+        link.click();
+        // Remove the link from the document
+        document.body.removeChild(link);
+    });
+</script>
+
+
+
+</body>
+</html>
